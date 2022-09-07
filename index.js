@@ -51,6 +51,20 @@ function resetCapthca()
 }
 
 
+function htmlSpecialChars(str)
+{
+	let map = {
+		'&': '&amp;',
+		'<': '&lt;',
+		'>': '&gt;',
+		'"': '&quot;',
+		"'": '&#039;'
+	};
+
+	return str.replace(/[&<>"']/g, function(m) { return map[m]; });
+}
+
+
 $(document).ready(function()
 {
 	$('.nb-add-new').on('click', function()
@@ -140,9 +154,9 @@ $(document).ready(function()
 						if (res.id)
 						{
 							let tds = $('#nb-data tr[data-id="' + id + '"] td');
-							tds.eq(0).html(name);
-							tds.eq(1).html(dept);
-							tds.eq(2).html(phone);
+							tds.eq(0).html(htmlSpecialChars(name));
+							tds.eq(1).html(htmlSpecialChars(dept));
+							tds.eq(2).html(htmlSpecialChars(phone));
 
 							hidePopup(form);
 						}

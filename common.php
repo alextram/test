@@ -177,7 +177,7 @@ class DB
 	 */
 	function make_safe($str)
 	{
-		return mysqli_real_escape_string($this->mysqli, trim($str));
+		return mysqli_real_escape_string($this->mysqli, htmlspecialchars(trim($str), ENT_QUOTES, 'UTF-8'));
 	}
 
 
