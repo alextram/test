@@ -82,7 +82,7 @@ input[type="text"], input[type="tel"], input[type="submit"] {
     white-space:nowrap;
 }
 
-.algin-center {
+.align-center {
     text-align:center !important;
 }
 

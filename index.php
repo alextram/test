@@ -71,7 +71,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/common.php';
 	?>
 
 	<table id="notebook">
-		<thead><tr><th>Name</th><th>Department</th><th>Phone</th><th class="algin-center">Actions</th></tr></thead>
+		<thead><tr><th>Name</th><th>Department</th><th>Phone</th><th class="align-center">Actions</th></tr></thead>
 		<tbody id="nb-data">
 		<?php
 
@@ -81,7 +81,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/common.php';
 			echo '<td>' . $arr['name'] . '</td>';
 			echo '<td>' . $arr['dept'] . '</td>';
 			echo '<td>' . $arr['phone'] . '</td>';
-			echo '<td class="actions algin-center"><a href="#" class="nb-edit">&#9998;</a>&ensp;<a href="#" class="nb-del">&#128465;</a></td>';
+			echo '<td class="actions align-center"><a href="#" class="nb-edit">&#9998;</a>&ensp;<a href="#" class="nb-del">&#128465;</a></td>';
 			echo '</td>';
 		}
 

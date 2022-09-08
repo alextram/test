@@ -173,7 +173,7 @@ $(document).ready(function()
 						html += '<td>' + name  + '</td>';
 						html += '<td>' + dept  + '</td>';
 						html += '<td>' + phone + '</td>';
-						html += '<td class="actions algin-center"><a href="#" class="nb-edit">&#9998;</a>&ensp;<a href="#" class="nb-del">&#128465;</a></td>';
+						html += '<td class="actions align-center"><a href="#" class="nb-edit">&#9998;</a>&ensp;<a href="#" class="nb-del">&#128465;</a></td>';
 						html += '</tr>';
 
 						$('#nb-data').append(html);
